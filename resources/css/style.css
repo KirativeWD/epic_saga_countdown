@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Merienda:wght@900&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/cyclops_saga.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Cinzel Decorative', cursive;
+    display: grid;
+    color: #fff;
+    place-content: center;
+    min-height: 100vh;
+    font-size: clamp(1rem, 4vw, 3rem);
+    overflow: hidden;
+}
+
+.filter__1,
+.filter__2,
+.shimmer {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.filter__1 {
+    z-index: -3;
+    backdrop-filter: blur(15px);
+}
+
+.shimmer {
+    z-index: -2;
+}
+
+.filter__2 {
+    z-index: -1;
+    backdrop-filter: blur(5px);
+}
+
+.countdown {
+    text-align: center;
+    margin: 0 1.15rem;
+    display: grid;
+    gap: 2rem;
+    opacity: 0;
+    animation: fadeIn 1s linear 1s forwards;
+}
+
+@keyframes fadeIn {
+    100% {opacity: 1;}
+}
+
+h1,
+.timer {
+    text-shadow: 2px 2px 5px black;
+}
+
+h1 {
+    max-width: 15em;
+    margin: 0 auto;
+}
+
+.cover {
+    width: 100%;
+    display: block;
+    max-width: 420px;
+    margin: 0 auto;
+    display: none;
+}
+
+.timer {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Merienda', cursive;
+}
+
+.sec-cta {
+    display: flex;
+    gap: 1rem;
+}
+
+.timer .animated {
+    animation-name: pulse;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  
+@keyframes pulse {
+    100% {
+        transform: scaleX(1);
+    }
+
+    30%,
+    50%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    0% {
+        transform: scaleX(1);
+    }
+}
+
+@media (min-width: 68em) {
+    body {
+        background-position-y: -12rem;
+    }
+
+    .filter__1 {
+        z-index: -3;
+        backdrop-filter: blur(20px);
+    }
+    
+    .filter__2 {
+        z-index: -1;
+        backdrop-filter: blur(10px);
+    }
+
+}
