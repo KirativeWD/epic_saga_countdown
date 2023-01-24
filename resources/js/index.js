@@ -9,7 +9,7 @@ function calculateSagaCountdown(){
     var now = new Date();
 
     //release will occur on.
-    var sagaRelease = new Date("Jan 27, 2023 00:00:00").getTime();
+    var sagaRelease = new Date("Jan 27, 2023 00:00:00 EST").getTime();
 
     var nextSagaRelease = sagaRelease;
     var releaseDate = new Date(nextSagaRelease);
