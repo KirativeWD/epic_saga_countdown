@@ -35,9 +35,9 @@ function calculateSagaCountdown(){
     }
 
     //Add our counts to their corresponding HTML elements.
-    document.querySelector('.days').innerHTML = '| ' + days + ' days | ';
-    document.querySelector('.hours').innerHTML = hours + ' hours | ';
-    document.querySelector('.mins').innerHTML = minutes + ' minutes |';
+    document.querySelector('.days').innerHTML = days + ' days ';
+    document.querySelector('.hours').innerHTML = hours + ' hours ';
+    document.querySelector('.mins').innerHTML = minutes + ' minutes ';
     document.querySelector('.secs').innerHTML = seconds;
 
     //Recursive call after 1 second using setTimeout
