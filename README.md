@@ -1,14 +1,14 @@
 # EPIC: The Musical Saga Countdown Timer
 This countdown countsdown to the next saga release of the EPIC concept album.
 
-## Current Saga Countdown: The Cyclops Saga
-  - Upcoming Release Date: January 27th, 2023 12:00 AM EST
-  - Pre-Save Here: https://lnk.to/cyclopssaga
+## Current Saga Countdown: (Prospective) The Ocean Saga - Not Active
+  - Upcoming Release Date: Unknown
+  - Pre-Save Here: N/A
 
 ### All Epic Sagas
   - #### Act 1
     - The Troy Saga: https://lnk.to/epicthemusical
-    - The Cyclops Saga: Unreleased
+    - The Cyclops Saga: https://lnk.to/cyclopssaga
     - The Ocean Saga: Unreleased
     - The Circe Saga: Unreleased
     - The Underworld Saga: Unreleased
